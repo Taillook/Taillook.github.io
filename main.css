@@ -22,13 +22,17 @@ table {border-collapse:collapse; border-spacing:0;}
 hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
 input, select {vertical-align:middle;}
 
+@font-face {
+  font-family: "PixelMplus";
+  src: url("PixelMplus12-Regular.ttf") format("truetype");
+}
 
 /* Common */
 html, body, main {
     height: 100%;
     background-color:#000000;
     font-size:13px;
-    font-family:sans-serif;
+    font-family: "PixelMplus";
     line-height:1.5;
     color:#2EFE2E;
     cursor: crosshair;
@@ -37,6 +41,15 @@ a {
 }
 a:focus {
 	outline: none;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  padding-left: 2%;
 }
 
 #main {
@@ -50,12 +63,19 @@ a:focus {
   margin: auto;
 }
 
+#top {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
 /* tab-menu */
 #tab-menu {
   display: table;
   table-layout: fixed;
   text-align: center;
   width: 100%;
+  font-size: 1.5em;
 }
 #tab-menu li {
   border-top: 1px solid #2EFE2E;
