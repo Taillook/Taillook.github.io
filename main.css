@@ -31,7 +31,7 @@ input, select {vertical-align:middle;}
 html, body, main {
     height: 100%;
     background-color:#000000;
-    font-size:13px;
+    font-size:0.5vw;
     font-family: "PixelMplus";
     line-height:1.5;
     color:#2EFE2E;
@@ -44,11 +44,11 @@ a:focus {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 1vw;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1vw;
   padding-left: 2%;
 }
 
