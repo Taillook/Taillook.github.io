@@ -3,8 +3,25 @@
   src: url("YG.ttf") format("truetype");
 }
 
+html {
+  cursor:default;
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "YG";
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 header {
@@ -20,6 +37,7 @@ footer {
 .row {
   margin-top: 25px;
   margin-bottom: 25px;
+  margin: 0 auto;
 }
 
 .col-sm-3 {
@@ -36,7 +54,7 @@ footer {
 .navbar .navbar-inner {
   padding: 0;
 }
- 
+
 .navbar .nav {
   padding: 0;
   margin: 0;
@@ -44,7 +62,7 @@ footer {
   text-align: center;
   display: table;
 }
- 
+
 .navbar .nav li {
   border-top: 2px solid;
   border-bottom: 2px solid;
@@ -54,8 +72,9 @@ footer {
   list-style-type:none;
   float: left;
   width: 25%;
+  font-family: "YG";
 }
- 
+
 .navbar .nav li a {
   font-weight: bold;
   text-align: center;
@@ -63,16 +82,23 @@ footer {
   border-right: 1px solid rgba(0, 0, 0, .1);
   color: #333333;
 }
- 
+
 .navbar .nav li:last-child a {
   border-right: 0;
   border-radius: 0 3px 3px 0;
   color: #333333;
 }
 
-.nav > li > a:hover, .nav > li > a:focus{
+.nav > li > a:hover, .nav > li > a:focus, .nav li:last-child a:hover, .nav li:last-child a:focus{
     background-color: gray;
     color: #ffffff;
+}
+
+#box div {
+  display: none;
+}
+#box div.active {
+  display: block;
 }
 
 @media screen and (max-width: 320px){

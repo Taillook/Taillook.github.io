@@ -30,28 +30,55 @@
     <div class="container">
       <div class="row">
         <nav class="navbar">
-          <ul class="nav navbar-nav">
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">SERVICE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">ABOUT</a></li>
+          <ul id="menu" class="nav navbar-nav">
+          <li class="active"><a>HOME</a></li>
+          <li><a>PROFILE</a></li>
+          <li><a>SNS</a></li>
+          <li><a>WORK</a></li>
           </ul>
         </nav>
       </div>
       <div class="row">
         <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <h2>Hello</h2>
+        <div id="box" class="col-sm-6">
+          <div class="active">
+            <h2>すーぱーでりしゃすくーるな日常</h2>
+            <p>if文の条件式にラムダ式を入れるなど、可読性を無視したコーディングしている．</p>
+            <p>気付いたら誰かが修正してくれている．</p>
+          </div>
+          <div>
+            <h2>まだない</h2>
+          </div>
+          <div>
+            <h2>まだない</h2>
+          </div>
+          <div>
+            <h2>まだない</h2>
+          </div>
+        </div>
+      </div>
         </div>
         <div class="col-sm-3"></div>
       </div>
     </div>
     <footer>
-      @Taillook
+      <h4>@Taillook</h4>
     </footer>
 
     <!-- Jyoshi Syougakusei -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/turnBox.js"></script>
+    <script>
+      $(function(){
+        $('#menu li').on('click', function(){
+          if($(this).not('active')){
+            // タブメニュー
+            $(this).addClass('active').siblings('li').removeClass('active');
+            // タブの中身
+            var index = $('#menu li').index(this);
+            $('#box div').eq(index).addClass('active').siblings('div').removeClass('active');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
