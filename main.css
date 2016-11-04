@@ -32,3 +32,51 @@ footer {
   border-color: gray;
   background-color: rgba(0, 0, 0, 0);
 }
+
+.navbar .navbar-inner {
+  padding: 0;
+}
+ 
+.navbar .nav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+ 
+.navbar .nav li {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: gray;
+  padding: 0;
+  margin: 0;
+  list-style-type:none;
+  float: left;
+  width: 25%;
+}
+ 
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, .75);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  color: #333333;
+}
+ 
+.navbar .nav li:last-child a {
+  border-right: 0;
+  border-radius: 0 3px 3px 0;
+  color: #333333;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color: gray;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 320px){
+  .navbar .nav li {
+    width: 50%;
+  }
+}
