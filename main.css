@@ -1,108 +1,34 @@
-@charset 'utf-8';
-
-/* Reset */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
-body {line-height:1;}
-ul,ol {list-style:none;}
-blockquote, q {quotes:none;}
-blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
-a {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent;}
-ins {background-color:#ff9; color:#000; text-decoration:none;}
-mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;}
-del {text-decoration: line-through;}
-abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help;}
-table {border-collapse:collapse; border-spacing:0;}
-hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0;}
-input, select {vertical-align:middle;}
-
 @font-face {
-  font-family: "PixelMplus";
-  src: url("PixelMplus12-Regular.ttf") format("truetype");
+  font-family: "YG";
+  src: url("YG.ttf") format("truetype");
 }
 
-/* Common */
-html, body, main {
-    height: 100%;
-    background-color:#000000;
-    font-size:0.5vw;
-    font-family: "PixelMplus";
-    line-height:1.5;
-    color:#2EFE2E;
-    cursor: crosshair;
-}
-a {
-}
-a:focus {
-	outline: none;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "YG";
 }
 
-h1 {
-	font-size: 1vw;
-}
-
-p {
-  font-size: 1vw;
-  padding-left: 2%;
-}
-
-#main {
-  display: flex;
-	height: 100%;
-}
-
-#container {
-  width: 70%;
-  height: 50%;
-  margin: auto;
-}
-
-#top {
-  width: 100%;
-  height: 10%;
+header {
+  font-family: "YG";
   text-align: center;
 }
 
-/* tab-menu */
-#tab-menu {
-  display: table;
-  table-layout: fixed;
+footer {
+  font-family: "YG";
   text-align: center;
-  width: 100%;
-  font-size: 1.5em;
-}
-#tab-menu li {
-  border-top: 1px solid #2EFE2E;
-  border-left: 1px solid #2EFE2E;
-  border-right: 1px solid #2EFE2E;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 5px 25px;
-  color: #000000;
-  background: #2EFE2E;
-}
-#tab-menu li.active {
-  border-left: 1px solid #2EFE2E;
-  border-right: 1px solid #2EFE2E;
-  background: #000000;
-  color: #2EFE2E;
 }
 
-/* tab-box */
-#tab-box {
-  height: 90%;
-  padding: 25px;
-  border: 1px solid #2EFE2E;
+.row {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-#tab-box div {
-  display: none;
+
+.col-sm-3 {
+  background-color: rgba(0, 0, 0, 0);
 }
-#tab-box div.active {
-  display: block;
+
+.col-sm-6 {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: gray;
+  background-color: rgba(0, 0, 0, 0);
 }
