@@ -23,6 +23,13 @@ p {
   font-size: 1.4rem;
 }
 
+p img {
+  float: left;
+  margin-right: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: "YG";
 }
@@ -63,6 +70,7 @@ footer {
   border-bottom: 2px solid;
   border-color: gray;
   background-color: rgba(0, 0, 0, 0);
+  padding-bottom: 2%;
 }
 
 .cont {
