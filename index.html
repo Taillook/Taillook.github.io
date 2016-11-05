@@ -71,28 +71,20 @@
     <script>
       $(function(){
         $('#menu li').on('click', function(){
-          $('#box').animate({zIndex:1},{
-            //1秒かけてアニメーション
-            duration:1000,
-            //stepは、アニメーションが進むたびに呼ばれる
-            step:function(now){
-              //nowに現在のz-indexの値（0から1に変化しているところ）が渡してもらえる
-              //0から1に向かって変化していくnowを利用して3回転（1080度）させてみる
-              $(this).css({transform:'rotate(' + (now * 360) + 'deg)'});
-            },
-            //終わったら
-            complete:function(){
-              //次のために、元に戻しておく
-              $('#box').css('zIndex', 0);
-            }
-          })
+          $(`#box`).fadeOut("slow");
+          
           if($(this).not('active')){
-            // タブメニュー
+
             $(this).addClass('active').siblings('li').removeClass('active');
-            // タブの中身
+
             var index = $('#menu li').index(this);
-            $('#box div').eq(index).addClass('active').siblings('div').removeClass('active');
+
+            setTimeout(function(){
+              $('#box div').eq(index).delay(1000).addClass('active').siblings('div').removeClass('active');
+            },500);
           }
+
+          $(`#box`).fadeIn("slow");
         });
       });
     </script>
