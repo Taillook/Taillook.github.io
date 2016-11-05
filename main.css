@@ -21,6 +21,7 @@ a, a:hover {
 p {
   font-family: "YG";
   font-size: 1.4rem;
+  color: #222222;
 }
 
 p img {
@@ -41,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 header {
