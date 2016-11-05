@@ -42,7 +42,7 @@ __
 
   <body>
     <header>
-      <h1><i class="fa fa-fw  fa-leaf"></i>Taillook.github.io</h1>
+      <h1 id="ftype"><i class="fa fa-fw  fa-leaf"></i>Taillook.github.io</h1>
     </header>
     <div class="container">
       <div class="row">
@@ -60,8 +60,8 @@ __
         <div id="box" class="col-sm-6">
           <div class="cont active">
             <h2>すーぱーでりしゃすくーるな日常</h2>
-            <p>if文の条件式にラムダ式を入れるなど，可読性を無視したコーディングをしている．</p>
-            <p>気付いたら誰かが修正してくれている．</p>
+            <p>退屈な世の中に楽しみを与えてくれるソリューション，Ubuntu！</p>
+            <p>俺はこいつと旅に出る！(大嘘)</p>
           </div>
           <div class="cont">
             <h2>なまえ</h2>
@@ -99,6 +99,7 @@ __
     <!-- Jyoshi Syougakusei -->
     <script src="jq.js"></script>
     <script src="lity.js"></script>
+    <script src="flowtype.js"></script>
     <script>
       $(function(){
         $('#menu li').on('click', function(){
@@ -117,6 +118,17 @@ __
 
           $(`#box`).fadeIn("slow");
         });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+          $('#ftype').flowtype({
+            maximum: 9999,
+            minimum: 1,
+            maxFont:  9999,
+            minFont:   30,
+            fontRatio:  20
+          }); 
       });
     </script>
   </body>

@@ -27,6 +27,7 @@ p img {
   float: bottom;
   min-width: 300px;
   width: 100%;
+  max-width: auto;
   height: auto;
 }
 
@@ -35,7 +36,7 @@ p img {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 h2 {
