@@ -19,7 +19,8 @@ footer {
 }
 
 p {
-  font-size: 1.6rem;
+  font-family: "YG";
+  font-size: 1.4rem;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
