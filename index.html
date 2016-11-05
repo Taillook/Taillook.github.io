@@ -42,18 +42,18 @@
       <div class="row">
         <div class="col-sm-3"></div>
         <div id="box" class="col-sm-6">
-          <div class="active">
+          <div class="cont active">
             <h2>すーぱーでりしゃすくーるな日常</h2>
-            <p>if文の条件式にラムダ式を入れるなど、可読性を無視したコーディングしている．</p>
+            <p>if文の条件式にラムダ式を入れるなど，可読性を無視したコーディングしている．</p>
             <p>気付いたら誰かが修正してくれている．</p>
           </div>
-          <div>
+          <div class="cont">
             <h2>まだない1</h2>
           </div>
-          <div>
+          <div class="cont">
             <h2>まだない2</h2>
           </div>
-          <div>
+          <div class="cont">
             <h2>まだない3</h2>
           </div>
         </div>
@@ -71,6 +71,21 @@
     <script>
       $(function(){
         $('#menu li').on('click', function(){
+          $('#box').animate({zIndex:1},{
+            //1秒かけてアニメーション
+            duration:1000,
+            //stepは、アニメーションが進むたびに呼ばれる
+            step:function(now){
+              //nowに現在のz-indexの値（0から1に変化しているところ）が渡してもらえる
+              //0から1に向かって変化していくnowを利用して3回転（1080度）させてみる
+              $(this).css({transform:'rotate(' + (now * 360) + 'deg)'});
+            },
+            //終わったら
+            complete:function(){
+              //次のために、元に戻しておく
+              $('#box').css('zIndex', 0);
+            }
+          })
           if($(this).not('active')){
             // タブメニュー
             $(this).addClass('active').siblings('li').removeClass('active');
