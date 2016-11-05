@@ -13,6 +13,10 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
+a, a:hover {
+  color: #283455;
+}
+
 p {
   font-family: "YG";
   font-size: 1.4rem;
@@ -48,7 +52,7 @@ footer {
 .row {
   margin: 0 auto;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   background-color: rgba(0, 0, 0, 0);
 }
 
