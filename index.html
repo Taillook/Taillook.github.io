@@ -42,7 +42,7 @@ __
 
   <body>
     <header>
-      <h1 id="fTitle"><i class="fa fa-fw  fa-leaf"></i>Taillook.github.io</h1>
+      <h1 id="fTitle"><i class="fa fa-fw  fa-leaf"></i>Taillook.github.io </h1>
     </header>
     <div class="container">
       <div class="row">
@@ -107,7 +107,7 @@ __
     <script src="flowtype.js"></script>
     <script>
       $(function(){
-        $('#menu li').eq(0).css({'font-size':'1.4rem'});
+        $('#menu li a').eq(0).css({'font-size':'1.4rem','color':'#333333'});
 
         $('#menu li').on('click', function(){
           $(`#box`).fadeOut("slow");
@@ -117,8 +117,8 @@ __
             $(this).addClass('active').siblings('li').removeClass('active');
 
             var index = $('#menu li').index(this);
-            $('#menu li').css({'font-size':'1.2rem'});
-            $('#menu li').eq(index).css({'font-size':'1.4rem'});
+            $('#menu li a').css({'font-size':'1.2rem','color':'#666666'});
+            $('#menu li a').eq(index).css({'font-size':'1.4rem','color':'#333333'});
 
             setTimeout(function(){
               $('#box div').eq(index).delay(1000).addClass('active').siblings('div').removeClass('active');
@@ -136,7 +136,7 @@ __
             minimum: 1,
             maxFont:  9999,
             minFont:   30,
-            fontRatio:  18
+            fontRatio:  20
           });
       });
     </script>
