@@ -107,7 +107,7 @@ __
     <script src="flowtype.js"></script>
     <script>
       $(function(){
-        $('#menu li a').eq(0).css({'font-size':'1.4rem','color':'#333333'});
+        $('#menu li a').eq(0).css({'font-size':'1.8rem','color':'#333333'});
 
         $('#menu li').on('click', function(){
           $(`#box`).fadeOut("slow");
@@ -117,8 +117,8 @@ __
             $(this).addClass('active').siblings('li').removeClass('active');
 
             var index = $('#menu li').index(this);
-            $('#menu li a').css({'font-size':'1.2rem','color':'#666666'});
-            $('#menu li a').eq(index).css({'font-size':'1.4rem','color':'#333333'});
+            $('#menu li a').css({'font-size':'1.6rem','color':'#666666'});
+            $('#menu li a').eq(index).css({'font-size':'1.8rem','color':'#333333'});
 
             setTimeout(function(){
               $('#box div').eq(index).delay(1000).addClass('active').siblings('div').removeClass('active');
