@@ -1,0 +1,20 @@
+<nav class="nav-extended deep-purple lighten-1">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo center">GrapeBread</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <div id="navlist"></div>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <div id="navlist-mobile"></div>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  $(function(){
+    $(".button-collapse").sideNav();
+    $("#navlist").load("component/navlist.html");
+    $("#navlist-mobile").load("component/navlist.html");
+  });
+</script>

@@ -1,149 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GrapeBread</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Grapebread.net</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="lity.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+    $(function(){
+      $("#nav").load("component/nav.html");
+    });
+    </script>
   </head>
 
   <body>
-    <header>
-      <h1 id="fTitle"><i class="fa fa-fw  fa-leaf"></i>Grapebread.net </h1>
-    </header>
+    <div id="nav"></div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-          <nav class="navbar">
-            <ul id="menu" class="nav navbar-nav">
-            <li class="active"><a>HOME</a></li>
-            <li><a>PROFILE</a></li>
-            <li><a>SNS</a></li>
-            <li><a>WORKS</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-sm-2"></div>
+        <h2 class="deep-purple-text text-lighten-1">Hello</h2>
+        <p>このページはTaillookのポートフォリオサイトです．</p>
+        <p>作っているものを載せています．</p>
       </div>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div id="box" class="col-sm-8">
-          <div class="cont active">
-            <h2>Hello!</h2>
-            <p>はじめまして．</p>
-          </div>
-          <div class="cont">
-            <h2>名前</h2>
-            <p>Taillook</p>
-            <h2>どんな人？</h2>
-            <p>高専情報工学科4年 在学中</p>
-            <p>2014年4月に高専に入学，その後Python/Swift/C++/Julia/Processing等のプログラミング言語を触る．</p>
-            <p>学内のプログラミング勉強会のコミュニティに参加している．</p>
-            <p>HTML・CSSコーダーのアルバイト．</p>
-            <p>アプリ開発やウェブ制作に興味があります．</p>
-            <p>自宅のラックサーバー(IBM System x3250 M3)でWebサーバーの構築等も行っています．</p>
-            <p>将来は開発もデザインも幅広くやっていけるようになりたいです．</p>
-            <h2>スキル</h2>
-            <p>Python/Swift/Adobe XD/HTML/CSS</p>
-          </div>
-          <div class="cont">
-            <h2><i class="fa fa-fw fa-twitter"></i>Twitter</h2>
-            <p><a href="https://twitter.com/Taillook" target="_blank">@Taillook</a></p>
-            <h2><i class="fa fa-fw fa-github"></i>Github</h2>
-            <p><a href="https://github.com/Taillook/" target="_blank">github.com/Taillook</a></p>
-            <h2><i class="fa fa-fw  fa-pencil"></i>Blog</h2>
-            <p><a href="http://taillook.hateblo.jp/" target="_blank">TaillookTech</a></p>
-            <h2><i class="fa fa-fw  fa-pencil"></i>Wantedly</h2>
-            <p><a href="https://www.wantedly.com/users/18000790" target="_blank">wantedly.com/users/18000790</a></p>
-          </div>
-          <div class="cont">
-            <h2>NoveRe</h2>
-            <p><img src="img/NoveRe.png" data-lity></p>
-            <p><img src="img/NoveReDsign.png" data-lity></p>
-            <p>Web小説リーダー</p>
-            <p>Swiftで作りました．デザイン・プロトタイプはAdobeXDを使いました</p>
-            <p><i class="fa fa-fw fa-github"></i>Code:<a href="https://github.com/Taillook/NoveRe/releases/tag/v1.0.2" target="_blank">github.com/Taillook/NoveRe</a></p>
-
-            <h2>emojiGenerator</h2>
-            <p>Slack用絵文字ジェネレーター．</p>
-            <p>Pythonで作りました．</p>
-            <p><i class="fa fa-fw fa-github"></i>Code:<a href="https://github.com/Taillook/emojiGenerator" target="_blank">github.com/Taillook/emojiGenerator</a></p>
-
-            <h2>InflateBalloon</h2>
-            <p><img src="img/husen.png" data-lity></p>
-            <p>マイクから取得した音で風船を膨らませるゲーム</p>
-            <p>Processingで作りました．</p>
-            <p><i class="fa fa-fw fa-github"></i>Code:<a href="https://github.com/Taillook/InflateBalloon" target="_blank">github.com/Taillook/InflateBalloon</a></p>
-
-            <h2>ABSOLUTELY ZERO</h2>
-            <p><img src="img/mon.png" data-lity></p>
-            <p>PC用の壁紙です．</p>
-            <p>Processingで作りました．</p>
-          </div>
-        </div>
-      </div>
-        </div>
-        <div class="col-sm-2"></div>
-      </div>
-  </div>
-
-    <!-- JScript -->
-    <script src="jq.js"></script>
-    <script src="lity.js"></script>
-    <script src="flowtype.js"></script>
-    <script>
-      $(function(){
-        $('#menu li a').eq(0).css({'font-size':'1.8rem','color':'#333333'});
-
-        $('#menu li').on('click', function(){
-          $(`#box`).fadeOut("slow");
-
-          if($(this).not('active')){
-
-            $(this).addClass('active').siblings('li').removeClass('active');
-
-            var index = $('#menu li').index(this);
-            $('#menu li a').css({'font-size':'1.6rem','color':'#666666'});
-            $('#menu li a').eq(index).css({'font-size':'1.8rem','color':'#333333'});
-
-            setTimeout(function(){
-              $('#box div').eq(index).delay(1000).addClass('active').siblings('div').removeClass('active');
-            },500);
-          }
-
-          $(`#box`).fadeIn("slow");
-        });
-      });
-    </script>
-    <script>
-      $(document).ready(function(){
-          $('#fTitle').flowtype({
-            maximum: 9999,
-            minimum: 1,
-            maxFont:  9999,
-            minFont:   30,
-            fontRatio:  20
-          });
-      });
-    </script>
+    </div>
   </body>
 </html>
