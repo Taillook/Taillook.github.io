@@ -1,0 +1,20 @@
+[
+  {
+    "title": "社会科見学",
+    "start_at_date": "2014/03/03",
+    "start_at_time": "15:00:00",
+    "end_at_date": "2014/03/03",
+    "end_at_time": "17:00:00",
+    "memo": "やる",
+    "priority": "1",
+  },
+  {
+    "title": "溶鉱炉見学",
+    "start_at_date": "2014/03/03",
+    "start_at_time": "15:00:00",
+    "end_at_date": "2014/03/03",
+    "end_at_time": "17:00:00",
+    "memo": "やる",
+    "priority": "1",
+  },
+]
