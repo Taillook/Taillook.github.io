@@ -1,20 +1,16 @@
 [
   {
     "title": "社会科見学",
-    "start_at_date": "2014/03/03",
-    "start_at_time": "15:00:00",
-    "end_at_date": "2014/03/03",
-    "end_at_time": "17:00:00",
+    "start_at": ""2017-11-01 10:00:00 +0900"",
+    "end_at": "2017-11-01 11:00:00 +0900",
     "memo": "やる",
-    "priority": "1",
+    "priority": "high",
   },
   {
     "title": "溶鉱炉見学",
-    "start_at_date": "2014/03/03",
-    "start_at_time": "15:00:00",
-    "end_at_date": "2014/03/03",
-    "end_at_time": "17:00:00",
+    "start_at": ""2017-11-01 10:00:00 +0900"",
+    "end_at": "2017-11-01 11:00:00 +0900",
     "memo": "やる",
-    "priority": "1",
+    "priority": "low",
   },
 ]
